@@ -19,4 +19,4 @@ CMD python -m debugpy --listen 0.0.0.0:5678 --wait-for-client -m flask run -h 0.
 
 FROM base as prod
 
-CMD flask urn -h 0.0.0.0 -p 5000
+CMD flask run -h 0.0.0.0 -p 5000

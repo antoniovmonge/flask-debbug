@@ -39,3 +39,13 @@ docker run -p 5000:5000 -p 5678:5678 flask-random-number:debug
 Visit <http://127.0.0.1:5000/"int"> for example <http://127.0.0.1:5000/5>
 
 Now it is possible to set a `Breakpoint` in the desired line to start debugging with `F5`.
+
+## Production
+
+```bash
+docker build --target prod -t flask-random-number:prod .
+```
+
+```bash
+docker run -p 5000:5000 flask-random-number:prod
+```
